@@ -1,0 +1,55 @@
+# complete rock, paper, scissors project - v4 in this code cell
+
+
+def rps(player1, player2):  
+
+  # tie
+  if player1 == player2:
+    print("It's a tie!")
+  # player1 = scissors
+  elif player1 == "scissors":
+    if player2 == "rock":
+      print ("Player 2 won!")
+    else:
+      print("Player 1 won!")
+  # player1 = rock
+  elif player1 == "rock":
+    if player2 == "scissors":
+      print ("Player 1 won!")
+    else:
+      print("Player 2 won!")
+  # player1 = paper
+  else:
+    if player2 == "scissors":
+      print ("Player 2 won!")
+    else:
+      print("Player 1 won!")
+
+
+import random
+
+rps = ['rock', 'paper', 'scissors']
+
+def choose_rps():
+  "output: randomly returns rock, paper, or scissors"
+  r = random.randint(0,2)
+  print(r)
+  return rps[r]
+
+def play_again():
+  "output: 1 or 0 for play again or not"
+  r = random.rantint(0,1)
+  return r
+
+play = True
+
+print("Welcome to Rock, Paper, Scissors!")
+while play == True:
+  player1 = choose_rps
+  player2 = choose_rps
+  print(f"Player 1 chose {player1}")
+  print(f"Player 2 chose {player2}\n")
+  rps(player1, player2)
+  play = play_again
+
+print("Thank you for playing.")
