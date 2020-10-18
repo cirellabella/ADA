@@ -1,0 +1,30 @@
+# complete Rock, Paper, Scissors, v2 in this code cell.
+
+def rps(player1, player2):  
+
+  # tie
+  if player1 == player2:
+    print("It's a tie!")
+  # player1 = scissors
+  elif player1 == "scissors":
+    if player2 == "rock":
+      print ("Player 2 won!")
+    else:
+      print("Player 1 won!")
+  # player1 = rock
+  elif player1 == "rock":
+    if player2 == "scissors":
+      print ("Player 1 won!")
+    else:
+      print("Player 2 won!")
+  # player1 = paper
+  else:
+    if player2 == "scissors":
+      print ("Player 2 won!")
+    else:
+      print("Player 1 won!")
+
+  return
+  
+
+rps('rock', 'scissors')
