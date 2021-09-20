@@ -1,0 +1,17 @@
+computer = 'rock'
+user = 'rock'
+
+if computer == 'rock' and user == 'paper':
+  print('I win!')
+elif computer == 'rock' and user == 'scissors':
+  print('You win.')
+elif computer == 'paper' and user == 'rock':
+  print('You win.')
+elif computer == 'paper' and user == 'scissors':
+  print('I win!')
+elif computer == 'scissors' and user == 'paper':
+  print('You win.')
+elif computer == 'scissors' and user == 'rock':
+  print('I win!')
+else:
+  print('Tie.')
