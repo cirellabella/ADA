@@ -1,0 +1,69 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {           //declare 3 int variables
+            int myNumX;
+            int myNumY;
+            int myNumZ;
+
+            //prompt the user to input 3 numbers
+            Console.WriteLine("Enter a number:");
+            myNumX = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter a number:");
+            myNumY = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter a number:");
+            myNumZ = Convert.ToInt32(Console.ReadLine());
+
+
+
+            //Getting input from the user and converting it to integer
+
+
+            //Now I want to ask some questions about these numbers
+            //three evaluations - number 1 is greater than number 2 - print result
+            //if number two is less than number 3 - print result
+            //if number 1 and two are the same print result
+            if (myNumX > myNumY)
+            {
+                Console.WriteLine($"{myNumX} is greater than {myNumY}");
+            }
+
+            else if (myNumY < myNumZ)
+            {
+                Console.WriteLine($"{myNumY} is less than {myNumZ}");
+            }
+            else if (myNumX == myNumY)
+            {
+                Console.WriteLine($"{myNumX} is the same as {myNumY}");
+            }
+
+            //Evaluate number 1 and number 2 are not the same and print the result
+            if (myNumX != myNumY)
+            {
+                Console.WriteLine($"{myNumX} is not the same as {myNumY}");
+            }
+
+            //boolean variable if number 2 is even or odd and print the result
+            bool myNumYB = true;
+ if (myNumY % 2 == 0)
+            {
+                Console.WriteLine("Number is even");
+}
+            else
+            {
+                myNumYB = false;
+                Console.WriteLine("Number is odd");
+           }
+
+
+        }
+    }
+}
